@@ -1,0 +1,217 @@
+<ion-header  >
+  <ion-toolbar>
+    <ion-title>
+     Train Status
+    </ion-title>
+
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu-content"></ion-menu-button>
+    </ion-buttons>
+
+
+    <ion-avatar slot="end" class="header-icon" >
+      <img src="../assets/image/whatsapp.png" alt="" (click)="shareApp()">
+    </ion-avatar>
+    <ion-avatar slot="end" class="header-icon" >
+      <img src="../assets/image/rating.png" alt="" (click)="presentPopover()">
+    </ion-avatar>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card class="ion-padding"  class="ion-card-img" >
+
+    <ion-card-title >Train app (fast browser)</ion-card-title>
+    <ion-row>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/pnr.png" alt="" (click)="pnr()">
+      
+        </ion-avatar>
+        <div class="caption">Pnr status</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/running_status.png" alt="" (click)="runningstatus()" >
+        </ion-avatar>
+        <div class="caption">Running Status</div>
+      </ion-col>
+
+      <ion-col  >
+        <ion-avatar>
+          <img src="../assets/image/route.png" alt=""   (click)="route()"   > 
+        </ion-avatar>
+        <div class="caption">Route</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/seat.png" alt="" (click)="seatavailablity()"    >
+        </ion-avatar>
+        <div class="caption">Seat Availablity</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/platformtrain.png" alt=""  (click)=" platformtrain()"   >
+        </ion-avatar>
+        <div class="caption">Platform</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/speedometer.png" alt=""  (click)="speed()"   >
+        </ion-avatar>
+        <div class="caption">Train Speed</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/chart.png" alt=""    (click)="chart()" >
+        </ion-avatar>
+        <div class="caption">Chart Status</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/fare.png" alt=""   (click)="fare()"    >
+        </ion-avatar>
+        <div class="caption">Fare</div>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-card>
+
+   
+
+
+<!--slider-->
+
+
+
+
+  <ion-slides [options]="option" class="ion-margin-top" class="slidem">
+    <ion-slide>
+      <ion-card>
+        <img src="assets/image/book.jpg" (click)="book()">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/image/pnrprediction.jpg" (click)="prediction()" >
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="assets/image/share.jpg"  (click)="shareoption()" >
+      </ion-card>
+    </ion-slide>
+
+
+  </ion-slides>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--ionic launcher-->
+
+  <ion-card  class="ion-padding"  class="ion-card-img" >
+    <ion-card-title>Social app (Launcher)</ion-card-title>
+    <ion-row>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/whatsapp.png" alt="" (click)="launchApp('com.whatsapp')">
+        </ion-avatar>
+        <div class="caption">Whatsapp</div>
+       
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/facebook.png" alt=""    (click)="launchApp('com.facebook.katana')"   >
+        </ion-avatar>
+        <div class="caption">Facebook</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/instagram.png" alt="" (click)="launchApp('com.instagram.android')"   >
+        </ion-avatar>
+        <div class="caption">Instagram</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/moj.jpg" alt="" (click)="launchApp('in.mohalla.video')"  >
+        </ion-avatar>
+        <div class="caption">	
+          Moj</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/messenger.png" alt="" (click)="launchApp('com.facebook.orca')"   >
+        </ion-avatar>
+        <div class="caption">Messanger</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/youtube.png" alt=""  (click)="launchApp('com.google.android.youtube')"  >
+        </ion-avatar>
+        <div class="caption">Youtube</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/twitter.png" alt="" (click)="launchApp('com.twitter.android')" >
+        </ion-avatar>
+        <div class="caption">Twitter</div>
+      </ion-col>
+      <ion-col >
+        <ion-avatar>
+          <img src="../assets/image/snapchat.png" alt="" (click)="launchApp('com.snapchat.android')" >
+        </ion-avatar>
+        <div class="caption">Snapchat</div>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-card>
+
+
+
+
+
+
+
+
+  
+
+  <!--train news-->
+
+
+
+
+
+
+
+</ion-content>
